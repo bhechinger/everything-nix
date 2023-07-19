@@ -24,4 +24,6 @@
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
+
+  boot.zfs.devNodes = "/dev/disk/by-path/pci-0000:07:00.0-part2";
 }
