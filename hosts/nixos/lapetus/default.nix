@@ -4,7 +4,7 @@
     ../common/users/adrielus.nix
     ../common/optional/slambda.nix
 
-    ./services/syncthing.nix
+#    ./services/syncthing.nix
     ./hardware-configuration.nix
     ./filesystems.nix
     ./zfs.nix

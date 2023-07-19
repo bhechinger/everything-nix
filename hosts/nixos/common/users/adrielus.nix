@@ -13,7 +13,8 @@
       isNormalUser = true;
 
       # File containing my password, managed by agenix
-      passwordFile = config.age.secrets.adrielusPassword.path;
+#      passwordFile = config.age.secrets.adrielusPassword.path;
+      initialPassword = "nixos";
 
       # Set default shell
       shell = pkgs.fish;
@@ -25,7 +26,7 @@
         "audio" # Audio devices
         "video" # Webcam and the like
         "network" # wpa_supplicant
-        "syncthing" # syncthing!
+#        "syncthing" # syncthing!
       ];
 
       openssh.authorizedKeys.keyFiles =
