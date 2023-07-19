@@ -2,7 +2,7 @@
   imports = [
     ../common/global
     ../common/users/adrielus.nix
-    ../common/optional/slambda.nix
+#    ../common/optional/slambda.nix
 
 #    ./services/syncthing.nix
     ./hardware-configuration.nix
@@ -10,7 +10,7 @@
     ./zfs.nix
 
     (import ./partitions.nix {
-      disks = [ "/dev/sda" ];
+      disks = [ "/dev/vda" ];
     })
   ];
 
