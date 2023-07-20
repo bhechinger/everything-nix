@@ -158,7 +158,7 @@
           tethys = nixos {
             system = "x86_64-linux";
             hostname = "tethys";
-            user = "adrielus";
+            user = "wonko";
           };
 
           euporie = nixos {
@@ -167,10 +167,10 @@
             user = "guest";
           };
 
-          lapetus = nixos {
+          newbob = nixos {
             system = "x86_64-linux";
-            hostname = "lapetus";
-            user = "adrielus";
+            hostname = "newbob";
+            user = "wonko";
           };
         };
       # }}}
@@ -189,7 +189,7 @@
             };
         in
         {
-          "adrielus@tethys" = mkHomeConfig {
+          "wonko@tethys" = mkHomeConfig {
             system = "x86_64-linux";
             hostname = "tethys";
           };
@@ -197,9 +197,9 @@
             system = "x86_64-linux";
             hostname = "euporie";
           };
-          "adrielus@lapetus" = mkHomeConfig {
+          "wonko@newbob" = mkHomeConfig {
             system = "x86_64-linux";
-            hostname = "lapetus";
+            hostname = "newbob";
           };
         };
       # }}}

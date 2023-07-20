@@ -1,7 +1,7 @@
 {
   imports = [
     ../common/global
-    ../common/users/adrielus.nix
+    ../common/users/wonko.nix
 
     ../common/optional/pipewire.nix
     ../common/optional/xserver.nix

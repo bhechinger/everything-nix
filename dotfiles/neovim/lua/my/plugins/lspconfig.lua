@@ -129,7 +129,7 @@ local servers = {
   lua_ls = {
     cmd = {
       "lua-language-server",
-      "--logpath=/home/adrielus/.local/share/lua-language-server/log",
+      "--logpath=/home/wonko/.local/share/lua-language-server/log",
     },
     settings = {
       Lua = {

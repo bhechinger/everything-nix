@@ -53,24 +53,20 @@
         # {{{ Datasets
         datasets = {
           "root/persist/data" = {
-            options.compression = "lz4";
             type = "zfs_fs";
             mountpoint = "/persist/data";
             options."com.sun:auto-snapshot" = "true";
           };
           "root/persist/state" = {
-            options.compression = "lz4";
             type = "zfs_fs";
             mountpoint = "/persist/state";
             options."com.sun:auto-snapshot" = "true";
           };
           "root/local/nix" = {
-            options.compression = "lz4";
             type = "zfs_fs";
             mountpoint = "/nix";
           };
           "root/local/cache" = {
-            options.compression = "lz4";
             type = "zfs_fs";
             mountpoint = "/persist/local/cache";
           };

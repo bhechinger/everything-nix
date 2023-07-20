@@ -1,4 +1,4 @@
-# For more comments check out [adrielus](./adrielus.nix)
+# For more comments check out [wonko](./wonko.nix)
 { pkgs, outputs, lib, ... }:
 {
   users.mutableUsers = false;

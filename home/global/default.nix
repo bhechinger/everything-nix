@@ -48,7 +48,7 @@ in
 
   # Set reasonable defaults for some settings
   home = {
-    username = lib.mkDefault "adrielus";
+    username = lib.mkDefault "wonko";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     stateVersion = lib.mkDefault "23.05";
   };
@@ -57,7 +57,7 @@ in
   homeage.identityPaths = [ "~/.ssh/id_ed25519" ];
 
   # Allow root to read persistent files from this user.
-  home.persistence."/persist/home/adrielus".allowOther = true;
+  home.persistence."/persist/home/wonko".allowOther = true;
 
   # Set the xdg env vars
   xdg.enable = true;

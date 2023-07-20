@@ -3,8 +3,8 @@
 
   services.syncthing.folders = {
     "stellar-sanctum" = {
-      path = "/home/adrielus/Projects/stellar-sanctum/";
-      devices = [ "enceladus" "lapetus" ];
+      path = "/home/wonko/Projects/stellar-sanctum/";
+      devices = [ "enceladus" "newbob" ];
 
       # TODO: remove this once I switch to zfs
       versioning = {

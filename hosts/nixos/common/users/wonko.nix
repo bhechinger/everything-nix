@@ -1,20 +1,19 @@
 { pkgs, outputs, config, lib, ... }:
 {
   # Password file stored through agenix
-  age.secrets.adrielusPassword.file = ./adrielus_password.age;
+  age.secrets.wonkoPassword.file = ./wonko_password.age;
 
   users = {
     # Configure users through nix only
     mutableUsers = false;
 
-    # Create an user named adrielus
-    users.adrielus = {
+    # Create an user named wonko
+    users.wonko = {
       # Adds me to some default groups, and creates the home dir 
       isNormalUser = true;
 
       # File containing my password, managed by agenix
-#      passwordFile = config.age.secrets.adrielusPassword.path;
-      initialPassword = "nixos";
+      passwordFile = config.age.secrets.wonkoPassword.path;
 
       # Set default shell
       shell = pkgs.fish;

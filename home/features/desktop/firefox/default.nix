@@ -24,7 +24,7 @@ in
   programs.firefox = {
     enable = true;
 
-    profiles.adrielus = {
+    profiles.wonko = {
       # {{{ High level user settings
       # Unique user id
       id = 0;
