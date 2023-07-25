@@ -14,6 +14,7 @@
 
       # File containing my password, managed by agenix
       passwordFile = config.age.secrets.wonkoPassword.path;
+#      initialPassword = "nixos";
 
       # Set default shell
       shell = pkgs.fish;
