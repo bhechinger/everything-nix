@@ -2,9 +2,10 @@
   imports = [
     ../common/global
     ../common/users/wonko.nix
-#    ../common/optional/slambda.nix
+    ../common/users/rtorrent.nix
 
-#    ./services/syncthing.nix
+    ./services/rutorrent.nix
+
     ./hardware-configuration.nix
     ./filesystems.nix
     ./zfs.nix

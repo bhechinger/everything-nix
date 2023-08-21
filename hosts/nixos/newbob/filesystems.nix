@@ -1,9 +1,29 @@
 # Mark a bunch of paths as needed for boot
 { lib, ... }:
 {
-  fileSystems = lib.attrsets.genAttrs
-    [ "/" "/nix" "/persist/data" "/persist/state" "/persist/local/cache" "/boot" ]
-    (_: { neededForBoot = true; });
+  fileSystems."/" = {
+    neededForBoot = true;
+  };
+
+  fileSystems."/nix" = {
+    neededForBoot = true;
+  };
+
+  fileSystems."/persist/data" = {
+    neededForBoot = true;
+  };
+
+  fileSystems."/persist/state" = {
+    neededForBoot = true;
+  };
+
+  fileSystems."/persist/local/cache" = {
+    neededForBoot = true;
+  };
+
+  fileSystems."/boot" = {
+    neededForBoot = true;
+  };
 
   fileSystems."/nfs/Plex" = {
     device = "basket.4amlunch.net:/Plex";

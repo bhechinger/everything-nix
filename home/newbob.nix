@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, config, ... }: {
   imports = [ ./global ];
 
   # Arbitrary extra packages
@@ -12,13 +12,12 @@
     enable = true;
 
     # Actual data/media (eg: projects, images, videos, etc)
-    at.data.path = "/persist/data";
-    at.data.prefixDirectories = false;
+    at.data.path = "${config.home.homeDirectory}/.persist/data";
 
     # App state I want to keep
-    at.state.path = "/persist/state";
+    at.state.path = "${config.home.homeDirectory}/.persist/state";
 
     # App state which I should be able to delete at any point
-    at.cache.path = "/persist/local/cache";
+    at.cache.path = "${config.home.homeDirectory}/.persist/local/cache";
   };
 }
