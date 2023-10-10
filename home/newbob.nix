@@ -1,5 +1,8 @@
 { pkgs, inputs, config, ... }: {
-  imports = [ ./global ];
+  imports = [
+    ./global
+    ./features/neovim
+  ];
 
   # Arbitrary extra packages
   home.packages = [

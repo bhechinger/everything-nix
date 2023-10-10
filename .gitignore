@@ -1,6 +1,11 @@
+/.idea
 node_modules
 ./secrets.nix
 result
 README.html
 *.qcow2
 *.log
+
+# Secrets shouldn't find their way to git
+/secrets/config/host_keys
+/secrets/config
