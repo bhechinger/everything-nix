@@ -10,5 +10,9 @@ in
 {
   # Scoped for entire systems
   "./hosts/nixos/common/global/wireless/wifi_passwords.age".publicKeys = all_hosts ++ [ wonko_tethys ];
-  "./hosts/nixos/common/users/wonko_password-newbob.age".publicKeys = all_hosts ++ [ wonko_tethys ];
+  "./hosts/nixos/common/users/wonko_password.age".publicKeys = all_hosts ++ [ wonko_tethys ];
+
+  # Scoped for the user
+  # TODO: move this into `pass`.
+  "./home/features/desktop/wakatime/wakatime_config.age".publicKeys = [ wonko_tethys ];
 }

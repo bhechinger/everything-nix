@@ -19,11 +19,11 @@
   ];
 
   # Machine ids
-  networking.hostName = "tethys";
+  networking.hostName = "deepthought";
   environment.etc.machine-id.text = "08357db3540c4cd2b76d4bb7f825ec88";
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "22.11";
+  system.stateVersion = "23.11";
 
   # {{{ A few ad-hoc hardware settings
   hardware.opengl.enable = true;
